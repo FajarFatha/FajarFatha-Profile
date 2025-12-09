@@ -1,530 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajar Fatha Romadhan | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-     <title>Fajar Fatha Romadhan</title>
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
-<!--
-Tooplate 2120 Ben Resume
-https://www.tooplate.com/view/2120-ben-resume
--->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-
             <a class="navbar-brand" href="#">
-                Fajar Fatha Romadhan
+                &lt;Fajar/&gt;
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#logo" class="nav-link smoothScroll">Mastery</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="#pengalaman" class="nav-link smoothScroll">Experience</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a target="_blank" href="file/fajarfatharomadhan-CV.pdf" class="nav-link smoothScroll">CV</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Mastery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#outputs">Outputs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-
-                <!-- <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="#" class="custom-btn btn" download>Download CV</a>
-                </div> -->
+                <a href="file/fajarfatharomadhan-CV.pdf" target="_blank" class="btn btn-custom ms-lg-3 mt-3 mt-lg-0">Resume</a>
             </div>
-
         </div>
     </nav>
 
-
-    <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
-
-         <div class="container">
-            <div class="row">
-              <br>  
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/fajar.png" class="img-fluid" alt="Fajar images">
-                  </div>
-
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <h1 class="hero-title">👋 Fajar, a Developer and Progammer</h1>
-
-                            <a href="fajarfathar@gmail.com" class="email-link">
-                                fajarfathar@gmail.com
-                            </a>
-                          
-                        </div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <p class="hero-subtitle">Hello, my name is</p>
+                    <h1 class="mb-3">Fajar Fatha<br>Romadhan</h1>
+                    <h3 class="mb-4 text-dim">I am a <span id="typed-text" style="color: var(--primary);"></span></h3>
+                    <p class="lead text-dim mb-5 pe-lg-5">
+                        A Cumlaude Graduate of Informatics Engineering specializing in Machine Learning and Web Programming. I build intelligent systems and robust web applications.
+                    </p>
+                    <a href="#contact" class="btn btn-custom me-3">Contact Me</a>
+                    <a href="#outputs" class="btn btn-outline-light">View Portfolio</a>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="fade-left">
+                    <div class="hero-img-box">
+                        <img src="images/fajar.png" alt="Fajar Profile" class="img-fluid">
                     </div>
-
+                </div>
             </div>
         </div>
     </section>
 
-    <br>
-    <section class="about section-padding" id="about" style="background: #e4e3e3;">
+    <section id="about" class="section-padding">
         <div class="container">
-            <h3 class="mb-4">About Fajar</h3>
-            <div class="row" >
-
-                <div class="col-lg-6 col-md-6 col-12">
-
-                    <p class="text">My name is Fajar Fatha Romadhan, I am a graduate of the Informatics Engineering Study Program at Trunojoyo University, Madura. I graduated with Cumlaude predicate.</p>
-
-                    <p class="text">As a Bachelor of Computer, I have studied and been involved in various aspects of computer science ranging from programming, databases, and computer networks. My expertise is mainly focused on Machine Learning and Web Programming.</p>
-
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name :</strong> Fajar Fatha Romadhan </li>
-
-                        <li><strong>Date of Birth :</strong> November 2002</li>
-
-                        <li><strong>Religion :</strong> Islam</li>
-
-                        <li><strong>citizenship :</strong> Indonesia</li>
-
-                        <li><strong>status :</strong> Single</li>
-
-                    </ul>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up">
+                    <div class="position-relative">
+                        <img src="images/wisuda.jpg" alt="Graduation" class="img-fluid rounded-3 shadow-lg border border-secondary">
+                        <div class="position-absolute top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                    </div>
+                    <p class="text-dim">
+                        I am a graduate of the Informatics Engineering Study Program at Trunojoyo University, Madura with a <strong>Cumlaude</strong> predicate.
+                    </p>
+                    <p class="text-dim">
+                        As a Bachelor of Computer Science, I have dived deep into various aspects of technology, ranging from programming logic, database management, to computer networks. My true passion and expertise lie in the intersection of <strong>Machine Learning</strong> and <strong>Web Development</strong>.
+                    </p>
                     
-                </div>
-
-                <div class="col-lg-5 mx-auto col-md-6 col-12">
-                    <img src="images/wisuda.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
-                </div>
-          </div>
-      </section>
-            </div>
-            <!-- <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer volutpat</h3>
-                <p>Sed eu risus tincidunt, finibus dolor non, gravida ex. Donec lacinia mi nec erat tempus, vel consectetur ante scelerisque. Ut blandit, risus in venenatis ultricies, lacus tellus fermentum.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Mauris semper</h3>
-                <p>Cras et nisl vestibulum, accumsan elit sed, pretium enim. Vestibulum in condimentum magna. Maecenas quam magna, iaculis eu turpis et, commodo pulvinar leo.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer id neque</h3>
-                <p>Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida euismod lectus et, cursus tempor nulla. Praesent at turpis quis ex tristique gravida quis eget eros.</p>
-                </div>
-            </div> -->
-    <section class="about section-padding" id="logo">
-        <div class="container">
-            <div class="row logo-gallery">
-                <div class="col-lg-3 col-md-3 col-12 text-center"> <!-- Tambahkan class text-center untuk memusatkan teks -->
-                    <img src="images/logo/python.jpg" alt="Python Logo">
-                    <p>Python</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                  <img src="images/logo/php.png" alt="PHP Logo">
-                  <p>PHP</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                  <img src="images/logo/mysql.png" alt="MySQL Logo">
-                  <p>MySQL</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                  <img src="images/logo/pgsql.png" alt="MySQL Logo">
-                  <p>PostgreSQL</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/javascript.png" alt="JavaScript Logo">
-                    <p>JavaScript</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row logo-gallery" id="gallery2">
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/sklearn.png" alt="Scikit-Learn Logo">
-                    <p>Scikit Learn</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/keras.png" alt="Keras Logo">
-                    <p>Keras</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/jquery.png" alt="jQuery Logo">
-                    <p>jQuery</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/laravel.png" alt="Laravel Logo">
-                    <p>Laravel</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center">
-                    <img src="images/logo/codeigniter.png" alt="CodeIgniter Logo">
-                    <p>CodeIgniter</p>
-                </div>
-            </div>
-            
-          
-        </div>
-    </section>
-    
-    <section class="about section-padding" id="pengalaman" style="background: #e4e3e3;">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3 style="margin-bottom: 40px;">Experience</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul class="list-unstyled experience-list" type="disc">
-              <li >
-                  <h6 style="margin-bottom: 20px;">~ Web Programmer - CV. NATUSI (Oktober 2024 - Now)</h6> 
-              </li>
-              <li >
-                  <h6 style="margin-bottom: 20px;">~ Informatics Engineering Practicum Assistant</h6> 
-              </li>
-              <li >
-                  <h6 style="margin-bottom: 20px;">~ Freelance Machine Learning Engineer</h6>
-              </li>
-              <li >
-                  <h6 style="margin-bottom: 20px;">~ Practical work in village government agencies</h6>
-              </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- TESTIMONIAL -->
-     <!-- <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Ben</h6>
-                                        <span>Art Director</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Marie</h6>
-                                        <span>Marketing Consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Jen</h6>
-                                        <span>Product Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Wilson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <i class="fas fa-calendar-alt text-primary me-2"></i> <strong>Born:</strong> November 2002
                         </div>
-
+                        <div class="col-md-6 mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i> <strong>Citizenship:</strong> Indonesia
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <i class="fas fa-graduation-cap text-primary me-2"></i> <strong>Status:</strong> Cumlaude Graduate
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <i class="fas fa-envelope text-primary me-2"></i> <strong>Email:</strong> fajarfathar@gmail.com
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               </div>
-          </div>
-     </section> -->
-
-
-     <!-- FAQ
-     <section class="faq section-padding">
-        
+    <section id="skills" class="section-padding" style="background-color: #162033;">
         <div class="container">
-            
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Mastery & Tech Stack</h2>
+                    </div>
+                    <p class="text-dim">Tools and technologies I use to bring ideas to life</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-custom text-center">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>Languages & DB</h4>
+                        <p class="text-dim small mb-4">Core technologies for development</p>
+                        <div class="tech-stack d-flex flex-wrap justify-content-center">
+                            <img src="images/logo/python.jpg" title="Python">
+                            <img src="images/logo/php.png" title="PHP">
+                            <img src="images/logo/javascript.png" title="JavaScript">
+                            <img src="images/logo/mysql.png" title="MySQL">
+                            <img src="images/logo/pgsql.png" title="PostgreSQL">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-custom text-center">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h4>Web Frameworks</h4>
+                        <p class="text-dim small mb-4">Building robust web applications</p>
+                        <div class="tech-stack d-flex flex-wrap justify-content-center">
+                            <img src="images/logo/laravel.png" title="Laravel">
+                            <img src="images/logo/codeigniter.png" title="CodeIgniter">
+                            <img src="images/logo/jquery.png" title="jQuery">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-custom text-center">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Machine Learning</h4>
+                        <p class="text-dim small mb-4">Intelligent data processing</p>
+                        <div class="tech-stack d-flex flex-wrap justify-content-center">
+                            <img src="images/logo/sklearn.png" title="Scikit-Learn">
+                            <img src="images/logo/keras.png" title="Keras">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-padding">
+        <div class="container">
             <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h3 class="mb-5">Frequently Asked Questions</h3>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Are those HTML templates absolutely free for any kind of usage?
-                            </button>
-                          </h2>
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="section-title">
+                        <h2>Experience</h2>
+                    </div>
+                    <p class="text-dim">My professional journey and contributions.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date-badge">Oct 2024 - Present</span>
+                            <h5>Web Programmer</h5>
+                            <p class="text-dim">CV. NATUSI</p>
+                            <p class="text-dim small">Developing and maintaining web applications.</p>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, they are 100% free and there is no hidden charge.</p>
+                        <div class="timeline-item">
+                            <span class="date-badge">Freelance</span>
+                            <h5>Machine Learning Engineer</h5>
+                            <p class="text-dim">Remote</p>
+                            <p class="text-dim small">Working on various ML projects and data analysis.</p>
+                        </div>
 
-                            <p>They can be used for your commercial websites.</p>
-                          </div>
+                        <div class="timeline-item">
+                            <span class="date-badge">Academic</span>
+                            <h5>Informatics Engineering Practicum Assistant</h5>
+                            <p class="text-dim">University of Trunojoyo Madura</p>
+                            <p class="text-dim small">Assisting students in understanding programming concepts and lab work.</p>
                         </div>
-                      </div>
 
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Can I use them as a CMS theme or a part of website builder?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, you can use them.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              I cannot find a suitable HTML template. Can I request new template?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, please tell us what you need. We will try our best to fulfill it.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Can I redistribute your templates?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>No, this is totally NOT allowed. Please do not redistribute our HTML templates.</p>
-                          </div>
+                        <div class="timeline-item">
+                            <span class="date-badge">Internship</span>
+                            <h5>Practical Work</h5>
+                            <p class="text-dim">Village Government Agencies</p>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I support Tooplate?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Please spread a word about Tooplate website to your colleagues and friends.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <span class="faq-info-text">Please send us a message if you have anything to say. Send an email message to <strong>contact (at) tooplate (dot) com</strong></span>
-
                 </div>
-
-           	 </div>
-        	</div>
+            </div>
         </div>
-    </section> -->
-
-    
-    <section class="about section-padding" id="certif">
-      <div class="container">
-        <h3 class="mb-5 text-center">Certifications</h3>
-        <hr>
-        <div class="row certif-gallery">
-          <div class="col-lg-12 col-md-12 col-12 text-center">
-            <img style="height: 400px" src="images/sertif/jarkom.jpg" alt="JavaScript Logo">
-            <h5 style="margin-top: 20px;">Certificate of Competence</h5>
-            <h6>Jaringan Komputer</h6>
-            <p><b>Teknisi Muda Jaringan Komputerr</b></p>
-        </div>
-        </div>
-        <hr>
-        <div class="row certif-gallery">
-          <div class="col-lg-12 col-md-12 col-12 text-center">
-            <img style="height: 400px" src="images/sertif/toefl.jpg" alt="JavaScript Logo">
-            <h5 style="margin-top: 20px;">Certificate TOEFL</h5>
-            <h6>University of Trunojoyo Madura Language Center</h6>
-            <p>Score : <b>476</b></p>
-        </div>
-        </div>
-        <hr>
-          <div class="row certif-gallery">
-              <div class="col-lg-12 col-md-12 col-12 text-center"> <!-- Tambahkan class text-center untuk memusatkan teks -->
-                  <img src="images/sertif/STAINS.png" alt="Python Logo">
-                  <h5 style="margin-top: 20px;">Participant Certificate</h5>
-                  <h6>Seminar Nasional Teknologi dan Sains (STAINS)</h6>
-                  <p><b>"Identifikasi Tingkat Kesadaran Pengemudi dari Data Video dengan Menggunakan Convolutional Long Short Term Memory"</b></p>
-                  <p>Publication Link : <a style="color: rgb(0, 183, 255); margin-top: -50px;" href="https://proceeding.unpkediri.ac.id/index.php/stains/article/view/4104">Click Here</a></p>
-              </div>
-          </div>
-          
-      </div>
     </section>
 
-
-    <section class="about section-padding" id="outputs" style="background: #e4e3e3;">
-      <div class="container">
-        <h3 class="mb-5 text-center">Outputs</h3>
-        <hr>
-        <div class="row certif-gallery">
-          <div class="col-lg-12 col-md-12 col-12 text-center">
-            <img style="height: 400px" src="images/lembar_pengesahan.jpg" alt="JavaScript Logo">
-            <h5 style="margin-top: 20px;">Thesis</h5>
-            <h6>Depthwise Separable Convolution untuk Reduksi Parameter Pada Identifikasi Tingkat Kesadaran Pengemudi dalam Berkendara dari Data Video dengan Convolutional LSTM</h6>
-            <p><b>Download File : </b><a target="_blank" href="file/Skripsi_Fajar Fatha Romadhan_7.pdf">PDF</a></p>
-        </div>
-        </div>
-        <hr>
-          <div class="row certif-gallery">
-              <div class="col-lg-12 col-md-12 col-12 text-center"> <!-- Tambahkan class text-center untuk memusatkan teks -->
-                  <img src="images/sertif/HKI.jpg" alt="Python Logo">
-                  <h5 style="margin-top: 20px;">Intellectual Property Rights</h5>
-                  <p><b>"Deteksi Kelelahan Berupa Kantuk untuk Memberikan Peringatan Kewaspadaan pada Pengemudi dengan Menggunakan Pendekatan Berbasis Deep Learning untuk Data Time Series"</b></p>
-                  <p>Link : <a style="color: rgb(0, 183, 255); margin-top: -50px;" target="_blank" href="https://e-hakcipta.dgip.go.id/index.php/c?code=M2FhNWY5ZmM3MzkzODJjNGQzMzg0NmFkYWY5ZTIxNDgK">Click Here</a></p>
-              </div>
-          </div>
-          
-      </div>
-    </section>
-
-
-     <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input disabled type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
+    <section id="outputs" class="section-padding" style="background-color: #162033;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Outputs & Certifications</h2>
                 </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input disabled type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea disabled class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button disabled type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
-          </div>
-
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-                <p>
-                    <a href="#">
-                        fajarfathar@gmail.com
-                    <i class="fas fa-arrow-right custom-icon"></i>
-                    </a>
-                </p>
-                <ul class="social-links mt-2">
-                  <li><a href="https://github.com/FajarFatha" rel="noopener" target="_blank" class="fab fa-github"></a></li>
-                    <li><a href="https://www.facebook.com/fajarfatha.romadhan/" target="_blank" rel="noopener" class="fab fa-facebook"></a></li>
-                    <li><a href="https://www.instagram.com/fajar_fatha" target="_blank" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="https://www.linkedin.com/in/fajarfatha/" target="_blank" rel="noopener" class="fab fa-linkedin"></a></li>
-                </ul>
-
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2025 Fajar Profile Page</p>
-                
             </div>
 
-        </div>
-      </div>
-    </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="card-custom p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 text-primary fs-2"><i class="fas fa-book"></i></div>
+                            <div>
+                                <h5>Bachelor Thesis</h5>
+                                <p class="text-dim small mb-2">Depthwise Separable Convolution for Driver Drowsiness Detection using ConvLSTM</p>
+                                <a target="_blank" href="file/Skripsi_Fajar Fatha Romadhan_7.pdf" class="btn btn-sm btn-outline-primary mt-2">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-custom p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 text-primary fs-2"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <h5>Intellectual Property Rights (HKI)</h5>
+                                <p class="text-dim small mb-2">"Deteksi Kelelahan Berupa Kantuk... Menggunakan Deep Learning"</p>
+                                <a target="_blank" href="https://e-hakcipta.dgip.go.id/index.php/c?code=M2FhNWY5ZmM3MzkzODJjNGQzMzg0NmFkYWY5ZTIxNDgK" class="btn btn-sm btn-outline-primary mt-2">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-custom p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <img src="images/sertif/STAINS.png" alt="STAINS" class="img-fluid rounded" style="max-height: 100px;">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>National Seminar Publication (STAINS)</h5>
+                                <p class="text-dim">"Identifikasi Tingkat Kesadaran Pengemudi dari Data Video dengan Menggunakan Convolutional Long Short Term Memory"</p>
+                                <a href="https://proceeding.unpkediri.ac.id/index.php/stains/article/view/4104" target="_blank" class="output-link">Read Publication <i class="fas fa-arrow-right small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-in">
+                    <div class="card-custom output-card text-center">
+                        <img src="images/sertif/jarkom.jpg" alt="Jarkom">
+                        <h5>Network Technician (BNSP)</h5>
+                        <p class="text-dim">Competence Certificate</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-custom output-card text-center">
+                        <img src="images/sertif/toefl.jpg" alt="TOEFL">
+                        <h5>TOEFL Score: 476</h5>
+                        <p class="text-dim">Language Center UTM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center contact-box" data-aos="fade-up">
+                    <h2 class="mb-4">Get In Touch</h2>
+                    <p class="text-dim mb-5">
+                        I am currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <a href="mailto:fajarfathar@gmail.com" class="btn btn-custom btn-lg mb-5">
+                        <i class="fas fa-paper-plane me-2"></i> Say Hello
+                    </a>
+
+                    <div class="social-icons mt-4">
+                        <a href="https://github.com/FajarFatha" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fajarfatha/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/fajar_fatha" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/fajarfatha.romadhan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0 text-dim small">
+                &copy; 2025 Fajar Fatha Romadhan. Built with <i class="fas fa-heart text-danger"></i> and Bootstrap 5.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text', {
+            strings: ['Web Developer', 'Machine Learning Engineer', 'Programmer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+
+        // Navbar blur on scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar').classList.add('shadow-sm');
+                document.getElementById('navbar').style.background = 'rgba(15, 23, 42, 0.9)';
+            } else {
+                document.getElementById('navbar').classList.remove('shadow-sm');
+                document.getElementById('navbar').style.background = 'rgba(30, 41, 59, 0.7)';
+            }
+        });
+    </script>
 </body>
 </html>
